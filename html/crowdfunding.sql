@@ -43,6 +43,6 @@ INSERT INTO `fundraiser` VALUES ('Andy', 'North 10 Women\'s Basketball Foundatio
 INSERT INTO `fundraiser` VALUES ('Evan', 'International Foundation for Poverty Alleviation through Education', 'Support scientific research, technological development and innovation projects.', '23000', '20000', 'Shandong', 'invalid', '4');
 INSERT INTO `fundraiser` VALUES ('Mike', 'North 14 Men\'s Basketball Foundation', 'Provide basketball support for male students and help them get basketball education opportunities.', '70000', '10000', 'Hebei', 'invalid', '2');
 INSERT INTO `fundraiser` VALUES ('Bryant', 'North 405 Association', 'Funding cultural activities, art projects and community art education.', '40000', '12000', 'Hunan', 'Active', '3');
-INSERT INTO `fundraiser` VALUES ('Abner', 'Courageous foundation', 'Help improve community infrastructure, public services and residents\' quality of life.', '5000', '4000', 'Shenyang', 'invalid', '1');
+INSERT INTO `fundraiser` VALUES ('Abner', 'Courageous foundation', 'Help improve community infrastructure, public services and residents\' quality of life.', '5000', '3400', 'Shenyang', 'invalid', '1');
 
 SET FOREIGN_KEY_CHECKS = 1;
