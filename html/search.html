@@ -4,10 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>home</title>
-    <meta name="author" content="yinqi">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/materialdesignicons.min.css" rel="stylesheet">
+    <title>search</title>
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -15,22 +12,11 @@
     <div class="lyear-layout-web">
         <div class="lyear-layout-container">
             <aside class="lyear-layout-sidebar">
-                <div id="logo" class="sidebar-header" style="height: 50px;">
-                </div>
-                <div class="lyear-layout-sidebar-scroll">
-                    <nav class="sidebar-main">
-                        <ul class="nav nav-drawer">
-                            <li class="nav-item"> <a href="home.html">home</a> </li>
-                            <li class="nav-item nav-item-has-subnav active open">
-                                <!-- <a href="javascript:void(0)">page</a> -->
-                                <ul class="nav nav-subnav">
-                                    <li> <a href="fundraiser.html">fundraiser</a> </li>
-                                    <li> <a href="search.html">searchFundraisers</a> </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                <ul class="nav nav-drawer">
+                    <li> <a href="home.html">home</a> </li>
+                    <li> <a href="fundraiser.html">fundraiser</a> </li>
+                    <li> <a href="search.html">searchFundraisers</a> </li>
+                </ul>
             </aside>
             <header class="lyear-layout-header">
                 <nav class="navbar navbar-default">
@@ -44,66 +30,47 @@
             <main class="lyear-layout-content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-header" id="button1">
-                                    <form action="#!" method="post" class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="FUNDRAISER_ID">FUNDRAISER_ID</label>
-                                            <input type="text" class="form-control" id="FUNDRAISER_ID" name="FUNDRAISER_ID"
-                                                value="" />
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="CITY">CITY</label>
-                                            <input type="text" class="form-control" id="CITY" name="CITY" value="" />
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="CATEGORY_ID">CATEGORY_ID</label>
-                                            <div class="form-controls">
-                                                <select name="CATEGORY_ID" class="form-control" id="CATEGORY_ID">
-                                                    <!-- <option value="1">medical</option>
-                                                    <option value="2">education</option>
-                                                    <option value="3">social impact</option>
-                                                    <option value="4">crisis relief</option> -->
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <button type="button" id="button2" class="btn btn-primary ajax-post"
-                                                style="margin-top: 25px;">query</button>
-                                            <button type="button" id="button3" class="btn btn-primary ajax-post"
-                                                style="margin-top: 25px;">Clear</button>
-                                        </div>
-                                    </form>
-                                </div>
+                        <div class="card" style="background: #bcc6ed;">
+                            <div class="form-group col-md-6">
+                                <label for="FUNDRAISER_ID">FUNDRAISER_ID</label>
+                                <input type="text" class="form-control" id="FUNDRAISER_ID" name="FUNDRAISER_ID"
+                                    value="" />
                             </div>
+                            <div class="form-group col-md-6">
+                                <label for="CITY">CITY</label>
+                                <input type="text" class="form-control" id="CITY" name="CITY" value="" />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="CATEGORY_ID">CATEGORY_ID</label>
+                                <select name="CATEGORY_ID" style="width: 150px;" class="form-control" id="CATEGORY_ID">
+                                </select>
+                            </div>
+                            <button type="button" id="button2" class="btn btn-primary ajax-post"
+                                style="margin-left: 25px;">query</button>
+                            <button type="button" id="button3" class="btn btn-primary ajax-post"
+                                style="margin-left: 25px;">Clear</button>
                         </div>
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <!-- <div class="card-header" id="button1">
-                                    <h4>表格</h4>
-                                </div> -->
-                                <div class="card-body">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>FUNDRAISER_ID</th>
-                                                <th>ORGANIZER</th>
-                                                <th>CAPTION</th>
-                                                <th>TARGET_FUNDING</th>
-                                                <th>CURRENT_FUNDING</th>
-                                                <th>CITY</th>
-                                                <th>ACTIVE</th>
-                                                <th>CATEGORY_ID</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="tbody">
-                                            <!-- tbody -->
-                                        </tbody>
-                                    </table>
-                                    <div style="font-weight: bold;color: #f00;text-align: center;" id="note">
+                        <div class="card">
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>FUNDRAISER_ID</th>
+                                            <th>ORGANIZER</th>
+                                            <th>CAPTION</th>
+                                            <th>TARGET_FUNDING</th>
+                                            <th>CURRENT_FUNDING</th>
+                                            <th>CITY</th>
+                                            <th>ACTIVE</th>
+                                            <th>CATEGORY_ID</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbody">
+                                        <!-- tbody -->
+                                    </tbody>
+                                </table>
+                                <div style="font-weight: bold;color: #f00;text-align: center;" id="note">
 
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -112,15 +79,29 @@
             </main>
         </div>
     </div>
-
-    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            console.log('init');
-            $.ajax({
+        function ajax(obj) {
+            let type = obj.type;
+            let url = obj.url;
+            let callback = obj.callback;
+            let xhr = new XMLHttpRequest();
+            xhr.open(type, url);
+            xhr.send();
+            xhr.onreadystatechange = function () {
+                if (xhr.responseText) {
+                    callback(JSON.parse(xhr.responseText));
+                } else {
+                    callback('');
+                }
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function init() {
+            ajax({
                 url: "http://localhost:9001/api/getCategoriesList",
                 type: "get",
-                success: function (data) {
+                callback: function (data) {
                     console.log(data);
                     if (data.length) {
                         let tbodyinnerHTML = ''
@@ -131,21 +112,20 @@
                     }
                 }
             });
-        });
-        $("#button2").on('click', function () {
-            let FUNDRAISER_ID = $('#FUNDRAISER_ID').val()
-            let CITY = $('#CITY').val()
-            let CATEGORY_ID = $('#CATEGORY_ID').val()
-            if(!FUNDRAISER_ID && !CITY && !CATEGORY_ID){
+        }
+        init();
+        document.getElementById('button2').onclick = function () {
+            let FUNDRAISER_ID = document.getElementById('FUNDRAISER_ID').value
+            let CITY = document.getElementById('CITY').value
+            let CATEGORY_ID = document.getElementById('CATEGORY_ID').value
+            if (!FUNDRAISER_ID && !CITY && !CATEGORY_ID) {
                 alert('Web users must select at least one criteria !')
                 return
-            }            
-            $.ajax({
+            }
+            ajax({
                 url: `http://localhost:9001/api/getFundraisersListByType?FUNDRAISER_ID=${FUNDRAISER_ID}&CITY=${CITY}&CATEGORY_ID=${CATEGORY_ID}`,
-                // data: {name: 'jenny'},
                 type: "get",
-                //dataType: "json",
-                success: function (data) {
+                callback: function (data) {
                     console.log(data);
                     let tbodyinnerHTML = ''
                     if (data.length) {
@@ -169,17 +149,14 @@
                     }
                 }
             });
-        });
-        $("#button3").on('click', function () {
-            $('#FUNDRAISER_ID').val('')
-            $('#CITY').val('')
-            $('#CATEGORY_ID').val('')
-        });
+        };
+        document.getElementById('button3').onclick = function () {
+            document.getElementById('FUNDRAISER_ID').value = ''
+            document.getElementById('CITY').value = ''
+            document.getElementById('CATEGORY_ID').value = ''
+        };
 
     </script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
-    <script type="text/javascript" src="js/main.min.js"></script>
 </body>
 
 </html>
